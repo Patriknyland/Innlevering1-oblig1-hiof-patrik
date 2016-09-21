@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Oppgave 4</title>
+        <script>
+            window.onload = oppstart;
+
+
+            function oppstart(){
+                document.getElementById("btn0").onclick = trykket0;
+                document.getElementById("btn1").onclick = trykket1;
+                document.getElementById("btn2").onclick = trykket2;
+                document.getElementById("btn3").onclick = trykket3;
+                document.getElementById("btn4").onclick = trykket4;
+                document.getElementById("btn5").onclick = trykket5;
+                document.getElementById("btn6").onclick = trykket6;
+                document.getElementById("btn7").onclick = trykket7;
+                document.getElementById("btn8").onclick = trykket8;
+                document.getElementById("btn9").onclick = trykket9;
+            }
+
+
+            function trykket0(){
+                document.getElementById("Utskrift").innerHTML = "0";
+            }
+            function trykket1(){
+                document.getElementById('Utskrift').innerHTML = "1";
+            }
+            function trykket2(){
+                document.getElementById("Utskrift").innerHTML = "2";
+            }
+            function trykket3(){
+                document.getElementById("Utskrift").innerHTML = "3";
+            }
+            function trykket4(){
+                document.getElementById("Utskrift").innerHTML = "4";
+            }
+            function trykket5(){
+                document.getElementById("Utskrift").innerHTML = "5";
+            }
+            function trykket6(){
+                document.getElementById("Utskrift").innerHTML = "6";
+            }
+            function trykket7(){
+                document.getElementById("Utskrift").innerHTML = "7";
+            }
+            function trykket8(){
+                document.getElementById("Utskrift").innerHTML = "8";
+            }
+            function trykket9(){
+                document.getElementById("Utskrift").innerHTML = "9";
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+
+            <p id="Utskrift" type="text"></p>
+
+
+            <input type="button" id="btn1" value="1"></input>
+            <input type="button" id="btn2" value="2"></input>
+            <input type="button" id="btn3" value="3"></input>
+                <br>
+            <input type="button" id="btn4" value="4"></input>
+            <input type="button" id="btn5" value="5"></input>
+            <input type="button" id="btn6" value="6"></input>
+                <br>
+            <input type="button" id="btn7" value="7"></input>
+            <input type="button" id="btn8" value="8"></input>
+            <input type="button" id="btn9"value="9"></input>
+                <br>
+            <input type="button" id="btn0" value="0"></input>
+
+
+
+
+    </body>
+    </html>

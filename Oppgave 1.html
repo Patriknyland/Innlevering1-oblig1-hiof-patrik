@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8" />
+	    <title>Oppgave 1</title>
+
+	    <script>
+	        window.onload = oppstart;
+
+			function oppstart(){
+			    document.getElementById("btn1").onclick = visHei;
+				document.getElementById("btn2").onclick = visHade;
+			}
+
+			    function visHei(){
+					document.getElementById("Hei").innerHTML = "Hei på deg!"
+
+                }
+                
+                function visHade(){
+                    document.getElementById("Hei").innerHTML = "Hade bra!"
+
+                }
+	    </script>
+    </head>
+    <body>
+
+	    <p type="text" id="endring" />Oppgave1</p>
+		<button id="btn1">1</button>
+
+		<button id="btn2">2</button>
+	    <p id="Hei"></p>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype HTML>
+<head>
+	<title>Oppgave 6</title>
+	<meta charset="utf-8" />
+	<script>
+
+		window.onload = oppstart;
+        var antall = 0;
+
+		function oppstart() {
+
+			document.getElementById("btnLeggTil").onclick = leggTil;
+			//document.getElementById("btnLeggTil").onclick = tellVarer;
+
+		}
+
+		function leggTil() {
+			var varer = document.getElementById("txtNavn").value;
+            antall = antall + 1;
+
+        	document.getElementById("utskrift").innerHTML = "Du har " + antall + " varer på listen";
+
+			document.getElementById("liste").innerHTML = document.getElementById("liste").innerHTML + "<li>"+ varer +"</li>";
+            document.getElementById("txtNavn").value = "";
+		}
+        
+    </script>
+</head>
+<body>
+
+	<input type="text" id="txtNavn" />
+	<button type="button" id="btnLeggTil">Legg til vare</button>
+    <h1>Handleliste:</h1>
+
+    <ul id="liste">
+
+    </ul>
+        <br>
+    <p id="utskrift"></p>
+
+</body>

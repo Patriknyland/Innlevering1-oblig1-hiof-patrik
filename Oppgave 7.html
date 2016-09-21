@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8" />
+	    <title>Oppgave 7</title>
+	    <script>
+			window.onclick = oppstart;
+
+				function oppstart(){
+
+					document.getElementById("btnProdukt").onclick = visProdukt;
+					document.getElementById("btnKvotient").onclick = visKvotient;
+					document.getElementById("btnSumme").onclick = visSumme;
+					document.getElementById("btnDifferanse").onclick = visDifferanse;
+				}
+
+				function visProdukt(){
+
+					var a = parseInt(document.getElementById("input1").value);
+					var b = parseInt(document.getElementById("input2").value);
+					document.getElementById("utskrift").innerHTML = (a * b);
+				}
+
+				function visKvotient(){
+
+					var a = parseInt(document.getElementById("input1").value);
+					var b = parseInt(document.getElementById("input2").value);
+					document.getElementById("utskrift").innerHTML = (a / b);
+				}
+
+				function visSumme(){
+
+					var a = parseInt(document.getElementById("input1").value);
+					var b = parseInt(document.getElementById("input2").value);
+					document.getElementById("utskrift").innerHTML = (a + b);
+				}
+
+				function visDifferanse(){
+
+					var a = parseInt(document.getElementById("input1").value);
+					var b = parseInt(document.getElementById("input2").value);
+					document.getElementById("utskrift").innerHTML = (a - b);
+				}
+                aa = 1
+	   </script>
+    </head>
+    <body>
+		<p>Kalkulator:</p>
+
+			Tall 1: <select id="input1" type="text">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+
+        </select>
+
+		Tall 2: <input id="input2" type="text" />
+
+
+			<button id="btnProdukt">*</button>
+			<button id="btnKvotient">/</button>
+			<button id="btnSumme">+</button>
+			<button id="btnDifferanse">-</button>
+
+
+
+		<h1>=</h1><p id="utskrift"></p>
+    </body>
+</html>

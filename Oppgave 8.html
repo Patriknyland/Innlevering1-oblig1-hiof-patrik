@@ -1,0 +1,75 @@
+<!doctype HTML>
+<head>
+	<title>Oppgave 8</title>
+	<meta charset="utf-8" />
+	<script>
+
+		window.onload = oppstart;
+
+		var y = 0;
+        var x = 0;
+        var m = 0;
+        var n = m
+
+		function oppstart() {
+			setInterval(tegn,200);
+            setInterval(tegn1,100);
+		}
+
+
+
+		function tegn() {
+			var ctx = document.getElementById("tegneflate").getContext("2d");
+            var randomNbr = Math.floor(Math.random() * (400 - 0 + 1)) + y;
+            var randomNbr2 = Math.floor(Math.random() * (100 - 0 + 1)) + 1;
+
+
+            ctx.beginPath();
+			ctx.arc(0,0,y,0,2*Math.PI);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+			ctx.arc(400,0,y,0,2*Math.PI);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+			ctx.arc(0,400,y,0,2*Math.PI);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+			ctx.arc(400,400,y,0,2*Math.PI);
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+        }
+
+            function tegn1() {
+    			var ctx = document.getElementById("tegneflate").getContext("2d");
+                var randomNbr3 = Math.floor(Math.random() * (200 - 300 + 1)) + y;
+
+
+
+            ctx.beginPath();
+			ctx.arc(200,200,y,x,2*Math.PI);
+            ctx.strokeStyle = "#"+((1<<24)*Math.random()|0).toString(16);
+            ctx.stroke();
+
+
+
+			y = y + 4;
+            x = x + Math.floor(Math.random() * (10 - 5 + 1)) + y;
+
+		}
+
+	</script>
+	<style>
+		#tegneflate {
+			border-style:solid;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="tegneflate" width="400" height="400"></canvas>
+</body>

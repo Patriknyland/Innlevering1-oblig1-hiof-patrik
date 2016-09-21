@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	   <meta charset="utf-8" />
+	   <title>Oppgave 2</title>
+	   <script>	
+		    window.onclick = oppstart;
+		   
+		    function oppstart(){
+		        document.getElementById("btn1a").onclick = visSant1a;
+				document.getElementById("btn2a").onclick = visSant2a;
+				document.getElementById("btn1b").onclick = visSant1b;
+				document.getElementById("btn2b").onclick = visSant2b;
+				document.getElementById("btn1c").onclick = visSant1c;
+				document.getElementById("btn2c").onclick = visSant2c;
+				
+		    }
+			
+		    function visSant1a(){
+				document.getElementById("btn1a").onclick = alert("Galt");
+			}
+		    function visSant2a(){
+				document.getElementById("btn2a").onclick = alert("Rett");
+			}
+		    function visSant1b(){
+				document.getElementById("btn1b").onclick = alert("Rett");
+			}
+		    function visSant2b(){
+				document.getElementById("btn2b").onclick = alert("Galt");
+			}
+		    function visSant1c(){
+				document.getElementById("btn1c").onclick = alert("Galt");
+			}
+		    function visSant2c(){
+				document.getElementById("btn2c").onclick = alert("Rett");
+			}
+	   </script>
+    </head>
+    <body>
+	    <p id="Utsagn1">Ingen liker sjokolade:</p>
+		    <button id="btn1a">Sant</button>
+		    <button id="btn2a">Usant</button>
+		
+		<p id="Utsagn2">Fisk lever i vann:</p>
+		    <button id="btn1b">Sant</button>
+		    <button id="btn2b">Usant</button>
+		
+		<p id="utsagn3">Alle liker is:</p>
+		    <button id="btn1c">Sant</button>
+			<button id="btn2c">Usant</button>
+    </body>
+</html>

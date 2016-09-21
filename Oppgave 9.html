@@ -1,0 +1,38 @@
+<!doctype HTML>
+<head>
+	<title>Oppgave 9</title>
+	<meta charset="utf-8" />
+	<script>
+
+		window.onload = oppstart;
+
+		function oppstart() {
+			setInterval(spillLyd1,1000);
+			setInterval(spillLyd2,1000);
+			setTimeout(droyLyd3,137);
+		}
+
+		function droyLyd3() {
+			setInterval(spillLyd3,500);
+		}
+
+		function spillLyd1() {
+			var lyd = new Audio("cartoon004.wav");
+			lyd.play();
+		}
+
+		function spillLyd2() {
+			var lyd = new Audio("cartoon006.wav");
+			lyd.play();
+		}
+
+		function spillLyd3() {
+			var lyd = new Audio("cartoon008.wav");
+			lyd.play();
+		}
+
+	</script>
+</head>
+<body>
+	<p>Test</p>
+</body>
